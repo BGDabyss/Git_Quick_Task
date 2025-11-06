@@ -28,6 +28,7 @@ This repository contains two base branches:
    Do not mix unrelated changes in a single commit.  
    If you’re unsure how to plan commits or write messages, you may use AI assistance or refer to this post (ZJU internal access required):  
    https://www.cc98.org/topic/6098599
+   Again, you do not have to build a perfect game; it can have many bugs, as long as it runs and has at least five meaningful commits. This task isn’t a competition—save your time for more important things!
 
 3. **Merge into `main`**  
    After development, merge `code` into `main` so **all source code and the final report** are on `main`.
