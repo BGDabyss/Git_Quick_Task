@@ -1,0 +1,90 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{ctex} % 中文支持
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{indentfirst}
+\usepackage{fancyhdr}
+\usepackage{array}
+\usepackage{colortbl}
+\usepackage{tikz}
+
+% 中文字体
+\setCJKmainfont{Noto Serif CJK SC}
+
+% 代码高亮设置
+\lstset{
+    language=Python,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue}\bfseries,
+    stringstyle=\color{red},
+    commentstyle=\color{green!50!black},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    numbersep=5pt,
+    frame=single,
+    breaklines=true,
+    tabsize=4,
+    captionpos=b
+}
+
+% 页眉页脚
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{Git + LaTeX Report Template}
+\fancyfoot[C]{\thepage}
+
+% 标题信息
+\title{Git + AI + LaTeX Report}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Project Introduction}
+Briefly introduce your project and its main features.  
+You may describe what kind of game you developed and how AI tools assisted you.
+
+\section{AI Prompts Used}
+List **all prompts** you used during development.  
+Each prompt can be formatted as:
+\begin{verbatim}
+Prompt 1: "Write a simple Python 2048 game using pygame"
+Prompt 2: "Fix the bug where tiles merge incorrectly"
+\end{verbatim}
+
+\section{Git Workflow}
+Explain how you used Git for this project.  
+For example, how you created branches, made commits, and merged your work.  
+Also include your recent commit history:
+\begin{verbatim}
+$ git log --oneline
+e3a1b2c Add game UI and key handling
+b7f9d1a Initialize 2048 logic
+4a2f7b0 Setup project structure
+\end{verbatim}
+
+\section{Reflection}
+Summarize what you learned from:
+\begin{itemize}
+    \item Using AI to assist in development
+    \item Managing code with Git
+    \item Writing and compiling with LaTeX
+\end{itemize}
+
+\section{Appendix (Optional)}
+Include figures, screenshots, or extra notes here.
+
+\end{document}
